@@ -33,5 +33,5 @@ ON a.AlbumId =  t.AlbumId
 
 SELECT M.LastName AS Manager, 
        E.LastName AS Employee
-FROM Employees E INNER JOIN Employees M 
-ON E.ReportsTo = M.EmployeeID
+FROM Employees E, Employees M 
+WHERE E.ReportsTo = M.EmployeeID
