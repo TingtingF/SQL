@@ -35,3 +35,16 @@ SELECT M.LastName AS Manager,
        E.LastName AS Employee
 FROM Employees E, Employees M 
 WHERE E.ReportsTo = M.EmployeeID
+
+
+
+5./*Find the name and ID of the artists who do not have albums.*/
+
+
+SELECT Name,
+       a.ArtistId,
+       b.Title
+FROM Artists a
+LEFT JOIN Albums b
+ON a.ArtistId = b.ArtistId
+WHERE b.Title IS NULL
