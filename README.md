@@ -98,7 +98,14 @@ GROUP BY (City)
 ORDER BY Frequency DESC  
   
 6.Create a new customer invoice id by combining a customer’s invoice id with their first and last name while ordering your query in the following order: firstname, lastname, and invoiceID.
-
+  
+ SELECT  c.FirstName, c.LastName,i.InvoiceId,  
+         c.FirstName||c.LastName||i.InvoiceId AS NewID  
+         FROM Customers c  
+         INNER JOIN Invoices i  
+         ON c.CustomerID = i.CustomerID  
+         WHERE NewId like 'AstridGruber%'  
+         ORDER BY c.FirstName,c.LastName, i.InvoiceId
 
  
 
