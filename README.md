@@ -88,7 +88,11 @@ ORDER BY LastName ASC
   
 SELECT *  
 FROM Customers  
-WHERE Phone IS NULL 
+WHERE Phone IS NULL   
+  
+5.Find the cities with the most customers and rank in descending order.
+
+
  
 
 
