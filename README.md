@@ -90,7 +90,14 @@ SELECT *
 FROM Customers  
 WHERE Phone IS NULL   
   
-5.Find the cities with the most customers and rank in descending order.
+5.Find the cities with the most customers and rank in descending order.  
+  
+SELECT COUNT(CustomerID) AS Frequency,City  
+FROM CUSTOMERS  
+GROUP BY (City)  
+ORDER BY Frequency DESC  
+  
+6.Create a new customer invoice id by combining a customer’s invoice id with their first and last name while ordering your query in the following order: firstname, lastname, and invoiceID.
 
 
  
