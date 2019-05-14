@@ -82,7 +82,9 @@ FROM Employees
 SELECT LastName,FirstName,HireDate, date('now')-HireDate AS WorkY  
 FROM Employees  
 WHERE WorkY >= 15  
-ORDER BY LastName ASC
+ORDER BY LastName ASC  
+
+4. Profiling the Customers table, answer the following question.
  
  
 
