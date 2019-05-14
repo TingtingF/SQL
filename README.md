@@ -77,7 +77,14 @@ FROM Employees
          FROM Employees  
          
          
- 3. Show a list of employees who have worked for the company for 15 or more years using the current date function. Sort by lastname ascending.
+ 3. Show a list of employees who have worked for the company for 15 or more years using the current date function. Sort by lastname ascending.  
+ 
+SELECT LastName,FirstName,HireDate, date('now')-HireDate AS WorkY  
+FROM Employees  
+WHERE WorkY >= 15  
+ORDER BY LastName ASC
+ 
+ 
 
 
 
