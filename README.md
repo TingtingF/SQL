@@ -62,3 +62,7 @@ FROM Employees
 
 ### Model 4
 
+1. Pull a list of customer ids with the customer’s full name, and address, along with combining their city and country together.  
+
+
+
