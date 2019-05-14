@@ -84,8 +84,7 @@ FROM Employees
 WHERE WorkY >= 15  
 ORDER BY LastName ASC  
 
-4. Profiling the Customers table, answer the following question.
- 
+4. Profiling the Customers table, answer the following question.Are there any columns with null values? Indicate any below. 
  
 
 
