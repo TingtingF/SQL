@@ -63,6 +63,14 @@ FROM Employees
 ### Model 4
 
 1. Pull a list of customer ids with the customer’s full name, and address, along with combining their city and country together.  
+  
+  SELECT CustomerId,  
+         FirstName || " " || LastName AS FullName,  
+         Address,  
+         UPPER(City || " " || Country) AS CityCountry  
+         FROM Customers  
+           
+2. Create a new employee user id by combining the first 4 letters of the employee’s first name with the first 2 letters of the employee’s last name. Make the new field lower case and pull each individual step to show your work.
 
 
 
