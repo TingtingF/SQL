@@ -1,14 +1,3 @@
-Data Scientist Role Play: Profiling and Analyzing the Yelp Dataset Coursera Worksheet
-
-This is a 2-part assignment. In the first part, you are asked a series of questions that will help you profile and understand the data just like a data scientist would. For this first part of the assignment, you will be assessed both on the correctness of your findings, as well as the code you used to arrive at your answer. You will be graded on how easy your code is to read, so remember to use proper formatting and comments where necessary.
-
-In the second part of the assignment, you are asked to come up with your own inferences and analysis of the data for a particular research question you want to answer. You will be required to prepare the dataset for the analysis you choose to do. As with the first part, you will be graded, in part, on how easy your code is to read, so use proper formatting and comments to illustrate and communicate your intent as required.
-
-For both parts of this assignment, use this "worksheet." It provides all the questions you are being asked, and your job will be to transfer your answers and SQL coding where indicated into this worksheet so that your peers can review your work. You should be able to use any Text Editor (Windows Notepad, Apple TextEdit, Notepad ++, Sublime Text, etc.) to copy and paste your answers. If you are going to use Word or some other page layout application, just be careful to make sure your answers and code are lined appropriately.
-In this case, you may want to save as a PDF to ensure your formatting remains intact for you reviewer.
-
-
-
 Part 1: Yelp Dataset Profiling and Understanding
 
 1. Profile the data by finding the total number of records for each of the tables below:
@@ -148,7 +137,7 @@ SQL code used to arrive at answer:
 		| Henderson       |             10871 |
 		| Tempe           |             10504 |
 		| Pittsburgh      |              9798 |
-		| MontrÃ©al       |              9448 |
+		| MontrÃƒÂ©al       |              9448 |
 		| Chandler        |              8112 |
 		| Mesa            |              6875 |
 		| Gilbert         |              6380 |
@@ -203,7 +192,7 @@ SQL code used to arrive at answer:
 			          GROUP BY stars
 
 
-Copy and Paste the Resulting Table Below (2 columns – star rating and count):
+Copy and Paste the Resulting Table Below (2 columns Â– star rating and count):
 			+-------------+-------+
 			| Star Rating | Count |
 			+-------------+-------+
@@ -320,7 +309,7 @@ Copy and Paste the Resulting Table Below (2 columns – star rating and count):
 		| Lissa     |  120 |
 		+-----------+------+
 	
-11. Is there a strong relationship (or correlation) between having a high number of fans and being listed as "useful" or "funny?" Out of the top 10 users with the highest number of fans, what percent are also listed as “useful” or “funny”?
+11. Is there a strong relationship (or correlation) between having a high number of fans and being listed as "useful" or "funny?" Out of the top 10 users with the highest number of fans, what percent are also listed as Â“usefulÂ” or Â“funnyÂ”?
 
 Key:
 0% - 25% - Low relationship
@@ -376,7 +365,8 @@ Answer: Yes,businesses with 2-3 stars tend to have shorter opening hours compred
 11:00-21:00 |
 | Cabin Fever | Toronto | Food | 4.5 | Saturday|
 16:00-2:00 |
-+--------------+---------+----------+-------
++--------------+---------+----------+-------
+
 
 
 ii. Do the two groups you chose to analyze have a different number of reviews?
@@ -394,7 +384,8 @@ Answer: Yes,usinesses with 2-3 stars tend to have less reviews compred to the bu
 11:00-21:00 | 15 |
 | Cabin Fever | Toronto | Food | 4.5 | Saturday|
 16:00-2:00 | 26 |
-+--------------+---------+----------+-------
++--------------+---------+----------+-------
+
          
          
 iii. Are you able to infer anything from the location data provided between these two groups? Explain.
@@ -468,7 +459,8 @@ COUNT(r.useful)+COUNT(r.funny) | is_open |
 2 | 0 |
 | 2.96153846154 | 504 | 38.7692307692 |
 26 | 1 |
-+---------------+---------------------+---------------------
++---------------+---------------------+---------------------
+
 
 	
 	
@@ -515,7 +507,7 @@ iii. Output of your finished dataset:
 | Dani's Hair Loft               | Kennedy Township  |     None |   5.0 |            3 |       1 |
 | Deli La Trattoria              | Kirkland          |     None |   5.0 |            8 |       1 |
 | Boulangerie De L'ile Bizard    | L'ile-Bizard      |     None |   5.0 |            3 |       1 |
-| Le Shack du Pêcheur            | La Prairie        |     None |   5.0 |            8 |       1 |
+| Le Shack du PÃªcheur            | La Prairie        |     None |   5.0 |            8 |       1 |
 | Nikki's Collar Club            | Lyndhurst         |     None |   5.0 |            3 |       1 |
 +--------------------------------+-------------------+----------+-------+--------------+---------+
          
